@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Nosifer);
+body {
+  font-family: 'Nosifer';
+  margin: 10;
+  padding: 10;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+#score {
+  font-family: 'Nosifer';
+  font-size: 100%;
+  color: white;
+}
+
+canvas {
+  background: url(https://previews.123rf.com/images/aopsan/aopsan1205/aopsan120500032/13644442-Green-grass-background-Stock-Photo-grass.jpg);
+  margin: 0 auto;
+  display: inline;
+}
+
+p {
+  font-family: "Helvetica", "Roboto";
+  font-size: 200%;
+  color: rgb(50, 255, 0);
+  margin: 0;
+}
+
+progress {
+  width: 400px;
+  height: 14px;
+  margin: 50px auto;
+  display: block;
+  margin: 0 auto;
+  -webkit-appearance: none;
+  border: none;
+}
+
+progress::-webkit-progress-bar {
+  background: red;
+  border-radius: 50px;
+}
+
+progress::-webkit-progress-value {
+  border-radius: 50px;
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+  background: -webkit-linear-gradient(180deg, transparent, transparent 50%, rgba(0, 255, 0, 1) 0%, rgba(0, 255, 0, 1) 50%), -webkit-linear-gradient(left, rgba(125, 200, 0, 1), rgba(0, 255, 0, 1));
+  background-size: 100px 10%, 100% 100%, 0% 100%;
+  -webkit-animation: move 2s linear 0 infinite;
+}
+
+@-webkit-keyframes move {
+  0% {background-position: 0px 0px, 0 0, 0 0}
+  100% {background-position: -100px 0px, 0 0, 0 0}
+}
